@@ -24,17 +24,21 @@ def runCircle():
 def runRect():
     # print("Rect")
 
-    # bottom(left->right)
-    for x in range(50, 750+1, 5):
-        renderFrame(x, 90)
+    # # bottom(left->right)
+    # for x in range(50, 750+1, 5):
+    #     renderFrame(x, 90)
 
-    # right(bottom->top)
-    for y in range(90, 550+1, 5):
-        renderFrame(750, y)
+    # # right(bottom->top)
+    # for y in range(90, 550+1, 5):
+    #     renderFrame(750, y)
 
-    # top(right->left)
-    for x in range(750, 50-1, -5):
-        renderFrame(x, 550)
+    # left(top->bottom)
+    for y in range(550, 90-1, -5):
+        renderFrame(50, y)
+
+    # # top(right->left)
+    # for x in range(750, 50-1, -5):
+    #     renderFrame(x, 550)
 
 
 
