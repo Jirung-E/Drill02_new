@@ -32,13 +32,14 @@ def runRect():
     # for y in range(90, 550+1, 5):
     #     renderFrame(750, y)
 
+    # top(right->left)
+    for x in range(750, 50-1, -5):
+        renderFrame(x, 550)
+        
     # left(top->bottom)
     for y in range(550, 90-1, -5):
         renderFrame(50, y)
 
-    # # top(right->left)
-    # for x in range(750, 50-1, -5):
-    #     renderFrame(x, 550)
 
 
 
