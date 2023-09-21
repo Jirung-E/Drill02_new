@@ -13,7 +13,7 @@ def renderFrame(char_x, char_y):
     delay(0.01)
 
 def runCircle():
-    # print("Circle")
+    print("Circle")
     r = 200
     cx, cy = 400, 290
     for deg in range(0, 360, 5):
@@ -46,7 +46,7 @@ def runRect():
 
 
 while True:
-    # runCircle()
+    runCircle()
     runRect()
 
 close_canvas()
