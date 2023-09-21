@@ -20,16 +20,17 @@ def runCircle():
 
 def runRect():
     # print("Rect")
-    pass
+
+    # bottom
+    for x in range(50, 750+1, 5):
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, 90)
+        delay(0.01)
 
 
 while True:
-    clear_canvas_now()
-    grass.draw_now(400, 30)
-
     runRect()
-    runCircle()
-
-    delay(0.01)
+    # runCircle()
 
 close_canvas()
