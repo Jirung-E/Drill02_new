@@ -7,21 +7,27 @@ character = load_image("character.png")
 grass = load_image("grass.png")
 
 def runCircle():
-    print("Circle")
-    pass
+    # print("Circle")
+    r = 200
+    for deg in range(0, 360, 5):
+        x = r * math.cos(math.radians(deg))
+        y = r * math.sin(math.radians(deg))
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        delay(0.01)
 
 def runRect():
-    print("Rect")
+    # print("Rect")
     pass
-
 
 
 while True:
     clear_canvas_now()
     grass.draw_now(400, 30)
 
-    runCircle()
     runRect()
+    runCircle()
 
     delay(0.01)
 
