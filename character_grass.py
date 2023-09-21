@@ -17,8 +17,8 @@ def runCircle():
     r = 200
     cx, cy = 400, 290
     for deg in range(0, 360, 5):
-        x = cx + r * math.cos(math.radians(deg))
-        y = cy + r * math.sin(math.radians(deg))
+        x = cx + r * math.cos(math.radians(deg - 90))
+        y = cy + r * math.sin(math.radians(deg - 90))
         renderFrame(x, y)
 
 def runRect():
@@ -44,7 +44,8 @@ def runRect():
 
 
 while True:
-    # runCircle()
-    runRect()
+    runCircle()
+    break
+    # runRect()
 
 close_canvas()
