@@ -25,12 +25,17 @@ def runRect():
     # print("Rect")
 
     # bottom(left->right)
-    for x in range(50, 750+1, 5):
-        renderFrame(x, 90)
+    # for x in range(50, 750+1, 5):
+    #     renderFrame(x, 90)
+
+    # top(right->left)
+    for x in range(750, 50-1, -5):
+        renderFrame(x, 550)
+
 
 
 while True:
-    runCircle()
+    # runCircle()
     runRect()
 
 close_canvas()
